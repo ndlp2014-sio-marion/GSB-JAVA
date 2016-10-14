@@ -36,8 +36,8 @@ public class Medecin {
 	 * @return Renvoie codeMed.
 	 */
 
-	public Medecin(String codeMed, String nom, String prenom, String adresse, String telephone, String potentiel,
-			String specialite, Localite uneLocalite) {
+	public Medecin(String codeMed, String nom, String prenom, String adresse, Localite uneLocalite, String potentiel,
+			String specialite, String telephone) {
 		super();
 		this.codeMed = codeMed;
 		this.nom = nom;

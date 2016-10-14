@@ -1,8 +1,8 @@
 package gsb.modele.dao;
+import gsb.modele.Famille;
 
 import java.sql.ResultSet;
 
-import modele.Famille;
 
 public class FamilleDao {
 	public static Famille rechercher(String codeFamille){
@@ -14,7 +14,7 @@ public class FamilleDao {
 			};
 			}
 		catch(Exception e) {
-			System.out.println("erreur reqSelection.next() pour la requête - select * from FAMILLE where CODEFAMILLE='"+codeFamille+"'");
+			System.out.println("erreur reqSelection.next() pour la requï¿½te - select * from FAMILLE where CODEFAMILLE='"+codeFamille+"'");
 			e.printStackTrace();
 			}
 		ConnexionMySql.fermerConnexionBd();

@@ -25,8 +25,8 @@ public class MedecinServiceTest {
 		System.out.println(unMedecin.getNom());
 		System.out.println(unMedecin.getPrenom());
 		System.out.println(unMedecin.getAdresse());
-		System.out.println(unMedecin.getLaLocalite().getCodePostal());
-		System.out.println(unMedecin.getLaLocalite().getVille());
+		System.out.println(unMedecin.getUneLocalite().getCodePostal());
+		System.out.println(unMedecin.getUneLocalite().getVille());
 		System.out.println(unMedecin.getTelephone());
 		System.out.println(unMedecin.getPotentiel());
 		System.out.println(unMedecin.getSpecialite());

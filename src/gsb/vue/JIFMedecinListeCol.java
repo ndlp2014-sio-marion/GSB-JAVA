@@ -1,13 +1,10 @@
 /*
- * Créé le 3 mars 2015
+ * Crï¿½ï¿½ le 3 mars 2015
  *
- * TODO Pour changer le modèle de ce fichier généré, allez à :
- * Fenêtre - Préférences - Java - Style de code - Modèles de code
+ * TODO Pour changer le modï¿½le de ce fichier gï¿½nï¿½rï¿½, allez ï¿½ :
+ * Fenï¿½tre - Prï¿½fï¿½rences - Java - Style de code - Modï¿½les de code
  */
 package gsb.vue;
-
-import gsb.modele.Medecin;
-import gsb.modele.dao.MedecinDao;
 
 import java.awt.Container;
 import java.awt.Dimension;
@@ -23,11 +20,14 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 
+import gsb.modele.Medecin;
+import gsb.modele.dao.MedecinDao;
+
 /**
  * @author Isabelle
  * 3 mars 2015
- * TODO Pour changer le modèle de ce commentaire de type généré, allez à :
- * Fenêtre - Préférences - Java - Style de code - Modèles de code
+ * TODO Pour changer le modï¿½le de ce commentaire de type gï¿½nï¿½rï¿½, allez ï¿½ :
+ * Fenï¿½tre - Prï¿½fï¿½rences - Java - Style de code - Modï¿½les de code
  */
 public class JIFMedecinListeCol extends JInternalFrame implements ActionListener {
 
@@ -46,7 +46,7 @@ public class JIFMedecinListeCol extends JInternalFrame implements ActionListener
 	public JIFMedecinListeCol(MenuPrincipal uneFenetreContainer) {
 
 		fenetreContainer = uneFenetreContainer;
-		// récupération des données Medecin dans la collection
+		// rï¿½cupï¿½ration des donnï¿½es Medecin dans la collection
 		lesMedecins = MedecinDao.retournerCollectionDesMedecins();
 
 		int nbLignes = lesMedecins.size();
@@ -55,7 +55,7 @@ public class JIFMedecinListeCol extends JInternalFrame implements ActionListener
 		
 		
 
-		p = new JPanel(); // panneau principal de la fenêtre
+		p = new JPanel(); // panneau principal de la fenï¿½tre
 
 		int i=0;
 		String[][] data = new String[nbLignes][4] ;
@@ -76,13 +76,13 @@ public class JIFMedecinListeCol extends JInternalFrame implements ActionListener
 		pSaisie = new JPanel();
 		JTcodeMedecin = new JTextField(20);
 		JTcodeMedecin.setMaximumSize(JTcodeMedecin.getPreferredSize());
-		JBafficherFiche = new JButton("Afficher Fiche médecin");
+		JBafficherFiche = new JButton("Afficher Fiche mï¿½decin");
 		JBafficherFiche.addActionListener(this);
 		pSaisie.add(JTcodeMedecin);
 		pSaisie.add(JBafficherFiche);
 		p.add(pSaisie);
 		
-		// mise en forme de la fenêtre
+		// mise en forme de la fenï¿½tre
 		Container contentPane = getContentPane();
 		contentPane.add(p);
 	}
