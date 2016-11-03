@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 import gsb.modele.Famille;
 import gsb.modele.Medicament;
 
-public class MedicamentDao {
+public class MedicamentDao2 {
 	public static Medicament rechercher(String unDepotLegal, Famille uneFamille){
 		Medicament unMedicament=null;
 		ResultSet reqSelection = ConnexionMySql.execReqSelection("select * from MEDICAMENT where MED_DEPOTLEGAL ='"+unDepotLegal+"'");

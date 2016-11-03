@@ -11,13 +11,12 @@ public class Visiteur {
 	protected String adresse;
 	protected String telephone;
 	protected Date dateentree;
-	protected int prime;
 	protected Unite uneUnite;
 	
 
 
 	public Visiteur(String matricule, String nom, String prenom, String login, String mdp, String adresse,
-			String telephone, Date dateentree, int prime, Unite uneUnite) {
+			String telephone, Date dateentree, Unite uneUnite) {
 		super();
 		this.matricule = matricule;
 		this.nom = nom;
@@ -27,7 +26,6 @@ public class Visiteur {
 		this.adresse = adresse;
 		this.telephone = telephone;
 		this.dateentree = dateentree;
-		this.prime = prime;
 		this.uneUnite = uneUnite;
 	}
 
@@ -125,18 +123,6 @@ public class Visiteur {
 
 	public void setDateentree(Date dateentree) {
 		this.dateentree = dateentree;
-	}
-
-
-
-	public int getPrime() {
-		return prime;
-	}
-
-
-
-	public void setPrime(int prime) {
-		this.prime = prime;
 	}
 
 

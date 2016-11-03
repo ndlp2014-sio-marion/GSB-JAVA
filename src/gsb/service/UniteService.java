@@ -8,7 +8,7 @@ public class UniteService {
   Unite uneUnite = null;
   try{
   if (CodeUnite==null) {
-            throw new Exception("Donnée obligatoire : code");
+            throw new Exception("DonnÃ©e obligatoire : code");
         }
   uneUnite =UniteDao.rechercher(CodeUnite);
   }
@@ -17,4 +17,6 @@ public class UniteService {
   }
   return uneUnite;
  }
+ 
+
 }

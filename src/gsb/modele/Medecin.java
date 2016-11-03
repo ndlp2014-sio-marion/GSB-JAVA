@@ -1,26 +1,26 @@
 /*
- * Créé le 22 févr. 2015
+ * Crï¿½ï¿½ le 22 fï¿½vr. 2015
  *
- * TODO Pour changer le modèle de ce fichier généré, allez à :
- * Fenêtre - Préférences - Java - Style de code - Modèles de code
+ * TODO Pour changer le modï¿½le de ce fichier gï¿½nï¿½rï¿½, allez ï¿½ :
+ * Fenï¿½tre - Prï¿½fï¿½rences - Java - Style de code - Modï¿½les de code
  */
 package gsb.modele;
 
 /**
  * @author Isabelle
- * 22 févr. 2015
- * TODO Pour changer le modèle de ce commentaire de type généré, allez à :
- * Fenêtre - Préférences - Java - Style de code - Modèles de code
+ * 22 fï¿½vr. 2015
+ * TODO Pour changer le modï¿½le de ce commentaire de type gï¿½nï¿½rï¿½, allez ï¿½ :
+ * Fenï¿½tre - Prï¿½fï¿½rences - Java - Style de code - Modï¿½les de code
  */
 public class Medecin {
 	protected String codeMed ;
 	protected String nom;
 	protected String prenom;
 	protected String adresse;
+	protected Localite laLocalite;
 	protected String telephone;
 	protected String potentiel;
 	protected String specialite;
-	protected Localite uneLocalite;
 	/**
 	 * @param codeMed
 	 * @param nom
@@ -31,90 +31,115 @@ public class Medecin {
 	 * @param potentiel
 	 * @param specialite
 	 */
-	
+	public Medecin(String codeMed, String nom, String prenom,
+			String adresse, Localite laLocalite, String telephone,
+			String potentiel, String specialite) {
+		this.codeMed = codeMed;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.adresse = adresse;
+		this.laLocalite = laLocalite;
+		this.telephone = telephone;
+		this.potentiel = potentiel;
+		this.specialite = specialite;
+	}
 	/**
 	 * @return Renvoie codeMed.
 	 */
-
-	public Medecin(String codeMed, String nom, String prenom, String adresse, Localite uneLocalite, String potentiel,
-			String specialite, String telephone) {
-		super();
-		this.codeMed = codeMed;
-		this.nom = nom;
-		this.prenom = prenom;
-		this.adresse = adresse;
-		this.telephone = telephone;
-		this.potentiel = potentiel;
-		this.specialite = specialite;
-		this.uneLocalite = uneLocalite;
-	}
-	/**
-	 * @param codeMed codeMed à définir.
-	 */
-
 	public String getCodeMed() {
 		return codeMed;
 	}
-
+	/**
+	 * @param codeMed codeMed ï¿½ dï¿½finir.
+	 */
 	public void setCodeMed(String codeMed) {
 		this.codeMed = codeMed;
 	}
-
+	/**
+	 * @return Renvoie nom.
+	 */
 	public String getNom() {
 		return nom;
 	}
-
+	/**
+	 * @param nom nom ï¿½ dï¿½finir.
+	 */
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-
+	/**
+	 * @return Renvoie prenom.
+	 */
 	public String getPrenom() {
 		return prenom;
 	}
-
+	/**
+	 * @param prenom prenom ï¿½ dï¿½finir.
+	 */
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-
+	/**
+	 * @return Renvoie adresse.
+	 */
 	public String getAdresse() {
 		return adresse;
 	}
-
+	/**
+	 * @param adresse adresse ï¿½ dï¿½finir.
+	 */
 	public void setAdresse(String adresse) {
 		this.adresse = adresse;
 	}
-
+	/**
+	 * @return Renvoie laLocalite.
+	 */
+	public Localite getLaLocalite() {
+		return laLocalite;
+	}
+	/**
+	 * @param laLocalite laLocalite ï¿½ dï¿½finir.
+	 */
+	public void setLaLocalite(Localite laLocalite) {
+		this.laLocalite = laLocalite;
+	}
+	/**
+	 * @return Renvoie telephone.
+	 */
 	public String getTelephone() {
 		return telephone;
 	}
-
+	/**
+	 * @param telephone telephone ï¿½ dï¿½finir.
+	 */
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
 	}
-
+	/**
+	 * @return Renvoie potentiel.
+	 */
 	public String getPotentiel() {
 		return potentiel;
 	}
-
+	/**
+	 * @param potentiel potentiel ï¿½ dï¿½finir.
+	 */
 	public void setPotentiel(String potentiel) {
 		this.potentiel = potentiel;
 	}
-
+	/**
+	 * @return Renvoie specialite.
+	 */
 	public String getSpecialite() {
 		return specialite;
 	}
-
+	/**
+	 * @param specialite specialite ï¿½ dï¿½finir.
+	 */
 	public void setSpecialite(String specialite) {
 		this.specialite = specialite;
 	}
-
-	public Localite getUneLocalite() {
-		return uneLocalite;
-	}
-
-	public void setUneLocalite(Localite uneLocalite) {
-		this.uneLocalite = uneLocalite;
-	}
+	
 	
 	
 

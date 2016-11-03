@@ -5,10 +5,10 @@ import gsb.service.FamilleService;
 
 public class FamilleServiceTest {
 
- public static void main(String[] args){
-  Famille uneFamille = FamilleService.rechercherFamille("CRT");
-  System.out.println(uneFamille.getCodeFamille());
-  System.out.println(uneFamille.getLibelleFamille());
- }
- 
+	public static void main(String[] args){
+		Famille uneFamille = FamilleService.rechercherFamille("CRT");
+		System.out.println(uneFamille.getCodeFamille());
+		System.out.println(uneFamille.getLibelleFamille());
+	}
+	
 }
